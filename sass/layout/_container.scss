@@ -1,0 +1,6 @@
+.container {
+  /* 1500-(110*2)=1500-220+(40)=1240 */
+  width: min(100% - 20px, 1240px);
+  margin-inline: auto;
+  box-sizing: border-box;
+}
