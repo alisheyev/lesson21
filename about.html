@@ -6,25 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="./css/compressed/about.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header id="header">
         <nav id="nav">
-            <div class="container nav-container">
-                <div class="nav-left">
-                    <img src="./images/about/logo.svg" alt="logo" class="nav-logo">
-                    <ul class="nav-lists">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Sermon</a></li>
-                        <li><a href="#">Blog</a></li>
+            <div class="container nav-container df-jcsb-aic">
+                <div class="nav-left df-jcsb-aic">
+                    <a href="#">
+                        <img src="./images/about/logo.svg" alt="logo" class="nav-logo">
+                    </a>
+                    <ul class="nav-lists df-jcsb-aic">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">sermon</a></li>
+                        <li><a href="#">blog</a></li>
                     </ul>
                 </div>
                 <div class="nav-right">
                     <a href="#">
-                        <button class="primary-button">Contact us</button>
+                        <button class="primary-button">contact us</button>
+                        <button id="navbar-open" class="icon">
+                            <i class="fa fa-bars"></i>
+                        </button>
                     </a>
                 </div>
+
+                <div id="navbar-responsive" class="nav-bottom">
+                    <div class="nav-box">
+                        <button id="navbar-close">
+                            <img src="./images/about/close.svg" alt="close">
+                        </button> 
+                    </div>
+
+                    <ul class="nav-position">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">sermon</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>                      
+                </div> 
             </div>
         </nav>
     </header>   
@@ -32,31 +55,48 @@
     <footer id="footer">
         <div class="container footer-container">
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li>
+                    <a href="#">
+                        <img src="./images/about/logo-footer.svg" alt="logo">
+                    </a>
+                </li>
+                <li>© Copyright Finsweet 2022</li>
+                <li><a href="tel:(480) 555-0103">(480) 555-0103</a></li>
+                <li>4517 Washington Ave.</li>
+                <li><a href="finsweet@example.com">finsweet@example.com</a></li>
             </ul>
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><h6>Quicklinks</h6></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><h6>Connect </h6></li>
+                <li>
+                    <div class="social">
+                        <a href="#">
+                            <img src="./images/about/facebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/about/linkedin.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./images/about/twitter.svg" alt="">
+                        </a>
+                    </div>
+                </li>
             </ul>
             <div class="footer-right">
-                <h1>knowing you're always on the best energy deal.</h1>
+                <h4>Subscribe to get Latest Updates and News</h4>
                 <form action="">
-                  <input type="text" name="" id="" />
-                  <button type="submit">Sign Up Now</button>
+                  <input type="text" name="text" id="text" placeholder="Yourmail@gmail.com" />
+                  <button type="submit" class="primary-button">Sign Up Now</button>
                 </form>
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
