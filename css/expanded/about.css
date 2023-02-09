@@ -273,6 +273,12 @@ input:focus {
     grid-row: 2/3;
   }
 }
+@media (max-width: 390px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .df-jcsb-aic {
   display: flex;
   justify-content: space-between;
@@ -319,12 +325,66 @@ input:focus {
   color: #161722;
 }
 
+#dublecards-section_about {
+  padding: 130px 0px 0px;
+  background: #e5e5e5;
+}
+#dublecards-section_about .dublecards-container_about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+}
+#dublecards-section_about .dublecards-container_about .dublecards-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+  text-transform: uppercase;
+  color: #161722;
+}
+#dublecards-section_about .dublecards-container_about .dublecards-top h6 {
+  font-weight: 400;
+}
+#dublecards-section_about .dublecards-container_about .dublecards-top h2 {
+  font-weight: 700;
+  max-width: 500px;
+  text-align: center;
+}
+#dublecards-section_about .dublecards-container_about .dublecards-bottom {
+  display: grid;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 40px;
+}
+#dublecards-section_about .dublecards-container_about .dublecards-bottom .dublecards-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 16px;
+  color: #161722;
+}
+#dublecards-section_about .dublecards-container_about .dublecards-bottom .dublecards-card h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#dublecards-section_about .dublecards-container_about .dublecards-bottom .dublecards-card h6 {
+  font-weight: 400;
+  opacity: 0.78;
+  max-width: 500px;
+}
+#dublecards-section_about .dublecards-container_about .dublecards-bottom .dublecards-card img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
 #team-section_about {
   padding: 130px 0px;
+  background: #e5e5e5;
 }
 #team-section_about .team-container_about {
   display: flex;
   flex-direction: column;
+  row-gap: 64px;
 }
 #team-section_about .team-container_about .team-top {
   display: flex;
@@ -339,4 +399,92 @@ input:focus {
 }
 #team-section_about .team-container_about .team-top h2 {
   font-weight: 700;
+}
+#team-section_about .team-container_about .team-bottom {
+  display: grid;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+#team-section_about .team-container_about .team-bottom .bottom-card {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f5f2f0;
+  color: #161722;
+}
+#team-section_about .team-container_about .team-bottom .bottom-card:hover {
+  transition: 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#team-section_about .team-container_about .team-bottom .bottom-card h5 {
+  margin: 26px 0px 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#team-section_about .team-container_about .team-bottom .bottom-card p {
+  font-weight: 400;
+  opacity: 0.7;
+}
+#team-section_about .team-container_about .team-bottom .bottom-card .team-social-box {
+  margin-top: 16px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+@media (min-width: 790px) {
+  .dublecards-bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+@media (min-width: 970px) {
+  .team-bottom {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media (max-width: 970px) {
+  .team-bottom {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 24px;
+  }
+}
+@media (max-width: 790px) {
+  .dublecards-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .team-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  .team-bottom .card-1 {
+    grid-row: 1/2;
+  }
+  .team-bottom .card-2 {
+    grid-row: 2/3;
+  }
+  .team-bottom .card-3 {
+    grid-row: 4/5;
+  }
+  .team-bottom .card-4 {
+    grid-row: 3/4;
+  }
+  .team-bottom .card-5 {
+    grid-row: 5/6;
+  }
+  .team-bottom .card-6 {
+    grid-row: 6/7;
+  }
+  .team-bottom .card-7 {
+    grid-row: 8/9;
+  }
+  .team-bottom .card-8 {
+    grid-row: 7/8;
+  }
 }
