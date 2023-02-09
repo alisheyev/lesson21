@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -78,8 +79,23 @@ input:focus {
 }
 
 @font-face {
-  font-family: roboto-condensed;
-  src: url(../../fonts/RobotoCondensed.ttf);
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/RobotoCondensed-Bold.ttf") format("ttf"), url("../../fonts/RobotoCondensed-Bold.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/RobotoCondensed-Regular.ttf") format("ttf"), url("../../fonts/RobotoCondensed-Regular.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/RobotoCondensed.ttf") format("ttf"), url("../../fonts/RobotoCondensed.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 .container {
   max-width: 1320px;
@@ -300,6 +316,10 @@ input:focus {
   transition: 1s;
 }
 
+main {
+  background: #E5E5E5;
+}
+
 .hero__wrapper .hero__title-info {
   padding-top: 208px;
 }
@@ -307,30 +327,22 @@ input:focus {
   text-align: center;
 }
 .hero__wrapper .hero__title-info .hero__title h3 {
-  font-family: "Roboto Condensed";
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.08em;
   color: #A54E2B;
-  text-transform: uppercase;
 }
 .hero__wrapper .hero__title-info .hero__title h2 {
-  font-family: "Roboto Condensed";
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
   text-align: center;
   letter-spacing: -0.01em;
-  text-transform: uppercase;
   color: #161722;
   margin-top: 16px;
 }
 .hero__wrapper .hero__title-info .hero__title p {
-  font-family: "Roboto Condensed";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -343,24 +355,21 @@ input:focus {
 }
 
 .text-title {
-  padding: 64px 216px 128px 216px;
+  padding-top: 64px;
+  padding-bottom: 128px;
+  margin-left: 316px;
 }
 .text-title .text-info-post {
   max-width: 767px;
 }
 .text-title .text-info-post h3 {
-  font-family: "Roboto Condensed";
-  font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
   letter-spacing: -0.01em;
-  text-transform: uppercase;
   color: #161722;
 }
 .text-title .text-info-post p {
-  font-family: "Roboto Condensed";
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -371,15 +380,30 @@ input:focus {
 .text-title .text-info-post .text-img img {
   max-width: 100%;
   margin-top: 48px;
-  padding-bottom: 48px;
 }
 .text-title .text-info-post h4 {
-  font-family: "Roboto Condensed";
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   letter-spacing: -0.01em;
-  text-transform: uppercase;
   color: #161722;
+  margin-top: 48px;
+}
+.text-title .text-info-post .left-line-post {
+  background-image: url(../../images/blog-post/left-line.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.text-title .text-info-post .left-line-post p {
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 24px;
+}
+.text-title .text-info-post .circle-post div {
+  background-image: url(../../images/blog-post/circle.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.text-title .text-info-post .circle-post div p {
+  margin-left: 19px;
 }
