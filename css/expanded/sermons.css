@@ -77,6 +77,14 @@ input:focus {
   font-family: roboto-condensed;
   src: url(../../fonts/RobotoCondensed.ttf);
 }
+@font-face {
+  font-family: roboto-condensed;
+  src: url(../../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: roboto-condensed;
+  src: url(../../fonts/RobotoCondensed-Regular.ttf);
+}
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -371,6 +379,7 @@ input:focus {
 .btn-left button {
   width: 191px;
   height: 64px;
+  margin: 32px 0;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -383,6 +392,10 @@ input:focus {
   -webkit-backdrop-filter: blur(40px);
           backdrop-filter: blur(40px);
   border-radius: 12px;
+}
+.btn-left button:hover {
+  color: #fff;
+  transition: 0.5s;
 }
 
 .right__img img {

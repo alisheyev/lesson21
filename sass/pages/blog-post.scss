@@ -1,0 +1,105 @@
+@use "../global";
+@use "../abstrcts/mixin";
+
+.hero__wrapper {
+  .hero__title-info {
+    padding-top: 208px;
+
+    .hero__title {
+      text-align: center;
+
+      h3 {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.08em;
+        color: #A54E2B;
+        text-transform: uppercase;
+      }
+
+      h2 {
+
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #161722;
+        margin-top: 16px;
+      }
+
+      p {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161722;
+        margin-top: 16px;
+      }
+    }
+
+    .hero__img {
+      img {
+        margin-top: 64px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.text-title {
+
+  padding: 64px 216px 128px 216px;
+
+  .text-info-post {
+    max-width: 767px;
+
+    h3 {
+      font-family: 'Roboto Condensed';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #161722;
+    }
+
+    p {
+      font-family: 'Roboto Condensed';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #161722;
+      opacity: 0.78;
+      margin-top: 24px;
+    }
+
+    .text-img {
+      img {
+        max-width: 100%;
+        margin-top: 48px;
+        padding-bottom: 48px;
+      }
+    }
+
+    h4 {
+      font-family: 'Roboto Condensed';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #161722;
+    }
+  }
+
+}

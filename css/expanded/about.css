@@ -77,6 +77,14 @@ input:focus {
   font-family: roboto-condensed;
   src: url(../../fonts/RobotoCondensed.ttf);
 }
+@font-face {
+  font-family: roboto-condensed;
+  src: url(../../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+  font-family: roboto-condensed;
+  src: url(../../fonts/RobotoCondensed-Regular.ttf);
+}
 .container {
   max-width: 1320px;
   margin: 0 auto;
