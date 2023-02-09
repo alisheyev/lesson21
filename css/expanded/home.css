@@ -479,10 +479,8 @@ input:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
   text-align: center;
   text-transform: uppercase;
-  /* Black */
   color: #161722;
 }
 .semon-row .suma-bottom h1 {
@@ -494,7 +492,6 @@ input:focus {
   text-align: center;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  /* Black */
   color: #161722;
 }
 .semon-row .suma-bottom p {
@@ -502,7 +499,6 @@ input:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  /* or 150% */
   margin-bottom: 16px;
   text-align: center;
   max-width: 512px;
@@ -647,7 +643,7 @@ input:focus {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 24px;
   }
-  .home__bady h1 {
+  #home .home__bady h1 {
     font-size: 66px;
   }
   .blog-card {

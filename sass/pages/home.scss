@@ -214,13 +214,8 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
-      /* identical to box height */
-
       text-align: center;
       text-transform: uppercase;
-
-      /* Black */
-
       color: #161722;
     }
     h1 {
@@ -229,13 +224,9 @@
       font-size: 32px;
       line-height: 44px;
       margin-bottom: 16px;
-
       text-align: center;
       letter-spacing: -0.01em;
       text-transform: uppercase;
-
-      /* Black */
-
       color: #161722;
     }
 
@@ -244,13 +235,10 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-      /* or 150% */
       margin-bottom: 16px;
       text-align: center;
       max-width: 512px;
-
       color: #161722;
-
       opacity: 0.78;
     }
   }
@@ -420,9 +408,11 @@
     grid-column-gap: 24px;
   }
 
-  .home__bady {
-    h1 {
-      font-size: 66px;
+  #home {
+    .home__bady {
+      h1 {
+        font-size: 66px;
+      }
     }
   }
 
