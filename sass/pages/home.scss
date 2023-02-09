@@ -1,0 +1,442 @@
+@use "../global";
+@use "../abstrcts/variables" as var;
+@use "../abstrcts/mixin" as mixin;
+
+#home {
+  margin-top: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../images/home/woman-in-orange-coat-with-black-and-brown-scarf-5418305.jpg");
+  .home {
+    &__bady {
+      h3 {
+        padding-top: 128px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        max-width: 186px;
+        color: var.$main-color;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 82px;
+        max-width: 592px;
+        margin-bottom: 32px;
+        text-transform: uppercase;
+        color: var.$main-color;
+      }
+
+      button {
+        @include mixin.btn;
+        margin-bottom: 64px;
+      }
+
+      .home-end {
+        display: flex;
+        gap: 12px;
+
+        .divadr {
+          height: 2px;
+          background-color: #ffd2a4;
+          width: 18px;
+        }
+        p {
+          font-style: normal;
+          margin-top: -7px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          max-width: 308px;
+          color: #ffffff;
+          padding-bottom: 200px;
+        }
+      }
+    }
+  }
+}
+
+// start about
+
+#about {
+  .about__header {
+    padding-top: 128px;
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      text-transform: uppercase;
+      color: var.$blak-color;
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 64px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: var.$blak-color;
+    }
+  }
+
+  .about__bady {
+    .about-card {
+      padding: 80px;
+      background: #fff5eb;
+      border: 16px solid #ffd2a4;
+      margin-bottom: 28px;
+      border-top: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      h1 {
+        font-style: normal;
+        margin-top: 24px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #161722;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 8px;
+        max-width: 251px;
+        color: #161722;
+      }
+    }
+  }
+}
+
+// start semon
+
+.semon-row {
+  .semon-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+
+      text-transform: uppercase;
+
+      /* Black */
+
+      color: #161722;
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      /* identical to box height, or 133% */
+      margin-top: 16px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      max-width: 544px;
+      margin-bottom: 32px;
+
+      color: #161722;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 846px;
+      padding-bottom: 40px;
+      text-align: center;
+
+      /* Black */
+
+      color: #161722;
+
+      opacity: 0.78;
+    }
+  }
+
+  .suma__card {
+    margin-top: 40px;
+    text-align: center;
+
+    .card-suma {
+      text-align: center;
+
+      img {
+        max-width: 293px;
+        width: 100%;
+      }
+    }
+
+    .head {
+      text-align: center;
+      margin-bottom: 15px;
+      max-width: 390px;
+      img {
+        width: 100%;
+      }
+      button {
+        margin-top: -30px;
+        @include mixin.btn;
+        margin-bottom: 64px;
+      }
+    }
+  }
+
+  .suma-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 128px;
+    text-align: center;
+    span {
+      font-style: normal;
+      margin-bottom: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #161722;
+    }
+    h1 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 16px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #161722;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 16px;
+      text-align: center;
+      max-width: 512px;
+      color: #161722;
+      opacity: 0.78;
+    }
+  }
+}
+
+//start blog
+
+#blog {
+  background: #f5f2f0;
+
+  .blog-row {
+    padding-top: 128px;
+
+    .blog-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+
+        /* Black */
+
+        color: #161722;
+      }
+
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        max-width: 432px;
+
+        text-align: center;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+
+        /* Black */
+
+        color: #161722;
+      }
+    }
+
+    .blog-card {
+      margin-top: 64px;
+      padding-bottom: 128px;
+      .card-blog {
+        padding: 32px;
+        margin-top: 24px;
+        max-width: 302px;
+        background: linear-gradient(
+          184.38deg,
+          #060606 16.68%,
+          rgba(0, 0, 0, 0.02) 96.44%
+        );
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url(../../images/home/blog1/fashion-man-love-people-5875438.png);
+        h1 {
+          margin-top: 176px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: uppercase;
+
+          max-width: 238px;
+          color: #ffffff;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          /* or 150% */
+          margin-top: 16px;
+          color: #ffffff;
+          max-width: 238px;
+          opacity: 0.78;
+        }
+      }
+
+      .blog-card2 {
+        padding: 32px;
+        max-width: 302px;
+        margin-top: 24px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../images/home/blog3/a-statue-holding-a-holy-book-5613134.png);
+        h1 {
+          margin-top: 295px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: -0.01em;
+          text-transform: uppercase;
+
+          max-width: 238px;
+
+          color: #ffffff;
+        }
+      }
+
+      .blog-card3 {
+        padding: 32px;
+        max-width: 302px;
+        margin-top: 24px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../images/home/blog2/man-people-woman-connection-6276711.png);
+        h1 {
+          margin-top: 295px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: -0.01em;
+          text-transform: uppercase;
+
+          max-width: 238px;
+
+          color: #ffffff;
+        }
+      }
+      .blog-card4 {
+        padding: 32px;
+        max-width: 302px;
+        margin-top: 24px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url(../../images/home/blog2/woman-in-blue-tank-top-and-man-in-red-shirt-painting-3795022.png);
+        h1 {
+          margin-top: 295px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: -0.01em;
+          text-transform: uppercase;
+
+          max-width: 238px;
+
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .about__bady {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+  }
+
+  #home {
+    .home__bady {
+      h1 {
+        font-size: 66px;
+      }
+    }
+  }
+
+  .blog-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
+  }
+}
+
+@media (min-width: 900px) {
+  .about__bady {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .suma__card {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .blog-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

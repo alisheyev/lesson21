@@ -1,23 +1,25 @@
-.df-jcsb-aic {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@mixin gird($columns, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-column-gap: $gap;
 }
 
-.primary-button {
-  padding: 20px 50px;
+@mixin btn {
+  padding: 24px 64px;
+  background: #ffd2a4;
+  border-radius: 12px;
   font-weight: 400;
   font-size: 16px;
-  backdrop-filter: blur(40px);
-  border-radius: 12px;
-  text-transform: uppercase;
+  line-height: 16px;
   color: #1c1d28;
-  background-color: #ffd2a4;
-
+  transition: 1s;
   &:hover {
     color: #ffd2a4;
     background-color: #1c1d28;
-    transition: 1s;
   }
 }
 
+@mixin center {
+  display: flex;
+  justify-content: center;
+}

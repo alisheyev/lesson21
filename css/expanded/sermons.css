@@ -1,32 +1,12 @@
+@font-face {
+  font-family: "roboto-condensed";
+  src: url("../../fonts/RobotoCondensed.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   transition: all 0.5s ease;
-  font-family: "bot", sans-serif;
-}
-
-h1 {
-  font-size: 64px;
-}
-
-h2 {
-  font-size: 48px;
-}
-
-h3 {
-  font-size: 40px;
-}
-
-h4 {
-  font-size: 32px;
-}
-
-h5 {
-  font-size: 24px;
-}
-
-h6 {
-  font-size: 16px;
+  font-family: "roboto-condensed", sans-serif;
 }
 
 a {
@@ -77,30 +57,33 @@ input:focus {
   display: revert;
 }
 
-@font-face {
-  font-family: "roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../../fonts/RobotoCondensed-Bold.ttf") format("ttf"), url("../../fonts/RobotoCondensed-Bold.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: roboto-condensed;
-  src: url(../../fonts/RobotoCondensed-Bold.ttf);
-}
-@font-face {
-  font-family: "roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../../fonts/RobotoCondensed.ttf") format("ttf"), url("../../fonts/RobotoCondensed.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: bot;
-  src: url(../../fonts/RobotoCondensed.ttf);
-}
 .container {
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.df-jcsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary-button {
+  padding: 20px 50px;
+  font-weight: 400;
+  font-size: 16px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 12px;
+  text-transform: uppercase;
+  color: #1c1d28;
+  background-color: #ffd2a4;
+}
+.primary-button:hover {
+  color: #ffd2a4;
+  background-color: #1c1d28;
+  transition: 1s;
 }
 
 #header {
@@ -299,12 +282,39 @@ input:focus {
     flex-direction: column;
   }
 }
-#header__section {
+#main__section-img {
+  margin: 100px 0 0 0;
   background-image: url("../../images/sermons/church.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 432px;
+}
+#main__section-img h5 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #232536;
+}
+#main__section-img h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #232536;
+}
+
+.main__section-title {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .main__title {
@@ -337,12 +347,13 @@ input:focus {
 
 .left__right {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .left__title {
   background: #fff5eb;
   max-width: 100%;
-  padding: 61px 90px;
+  padding: 51px 90px 0 90px;
 }
 .left__title h4 {
   margin-bottom: 8px;
@@ -354,10 +365,11 @@ input:focus {
   text-transform: uppercase;
   background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .left__title h1 {
   margin: 16px 0;
-  width: 250px;
+  max-width: 250px;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -368,6 +380,7 @@ input:focus {
   color: #161722;
 }
 .left__title p {
+  max-width: 350px;
   font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -420,9 +433,20 @@ input:focus {
   height: 100%;
 }
 
+.btn-left-2 {
+  display: flex;
+  justify-content: end;
+}
+
 @media (max-width: 900px) {
   .left__right {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .main__section-title h1 {
+    font-weight: 700;
+    font-size: 24px;
   }
 }
