@@ -1,9 +1,9 @@
 @use "../global";
-
+@use "../abstrcts/mixin";
 
 .hero__wrapper {
   .hero__title-info {
-    padding-top: 128px;
+    padding-top: 208px;
 
     .hero__title {
       text-align: center;
