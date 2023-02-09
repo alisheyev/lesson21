@@ -55,7 +55,6 @@
     line-height: 14px;
     text-transform: uppercase;
     background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   h1 {
@@ -133,7 +132,7 @@
   }
 }
 
-@media (max-width: 390px) {
-  .left__title {
-  }
-}
+// @media (max-width: 390px) {
+//   .left__title {
+//   }
+// }

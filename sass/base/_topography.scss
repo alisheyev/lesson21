@@ -13,6 +13,14 @@
 }
 
 @font-face {
-  font-family: roboto-condensed;
-  src: url(../../fonts/RobotoCondensed-Regular.ttf);
+  font-family: 'roboto';
+  font-style: normal;
+  font-weight: 700;
+  src:url('../../fonts/RobotoCondensed.ttf') format('ttf'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../../fonts/RobotoCondensed.ttf') format('ttf'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: bot;
+  src: url(../../fonts/RobotoCondensed.ttf);
 }

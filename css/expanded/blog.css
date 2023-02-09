@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   transition: all 0.5s ease;
-  font-family: "roboto-condensed", sans-serif;
+  font-family: "bot", sans-serif;
 }
 
 h1 {
@@ -84,8 +84,14 @@ input:focus {
   src: url(../../fonts/RobotoCondensed-Bold.ttf);
 }
 @font-face {
-  font-family: roboto-condensed;
-  src: url(../../fonts/RobotoCondensed-Regular.ttf);
+  font-family: "roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/RobotoCondensed.ttf") format("ttf"), url("../../fonts/RobotoCondensed.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: bot;
+  src: url(../../fonts/RobotoCondensed.ttf);
 }
 .container {
   max-width: 1320px;
