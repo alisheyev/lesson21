@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   transition: all 0.5s ease;
-  font-family: "roboto-condensed", sans-serif;
+  font-family: "bot", sans-serif;
 }
 
 h1 {
@@ -91,6 +91,10 @@ input:focus {
   font-style: normal;
   font-weight: 700;
   src: url("../../fonts/RobotoCondensed.ttf") format("ttf"), url("../../fonts/RobotoCondensed.ttf") format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: bot;
+  src: url(../../fonts/RobotoCondensed.ttf);
 }
 .container {
   max-width: 1320px;
@@ -317,6 +321,37 @@ input:focus {
   transition: 1s;
 }
 
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+@font-face {
+  * {
+    font-family: "bot";
+    src: url(../../fonts/RobotoCondensed.ttf);
+  }
+}
+
 #intro-section_about {
   margin-top: 80px;
   padding: 160px 0px;
@@ -342,7 +377,7 @@ input:focus {
 
 #welcome-section_about {
   padding-top: 130px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 #welcome-section_about .welcome-container_about {
   display: flex;
@@ -403,7 +438,7 @@ input:focus {
   color: #161722;
   -moz-column-gap: 24px;
        column-gap: 24px;
-  max-width: 980px;
+  max-width: 1000px;
   row-gap: 24px;
 }
 #welcome-section_about .welcome-container_about .welcome-bottom .wel {
@@ -426,7 +461,7 @@ input:focus {
 
 #dublecards-section_about {
   padding: 130px 0px 0px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 #dublecards-section_about .dublecards-container_about {
   display: flex;
@@ -478,7 +513,7 @@ input:focus {
 
 #team-section_about {
   padding: 130px 0px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 #team-section_about .team-container_about {
   display: flex;
@@ -509,7 +544,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  background-color: #ffffff;
   color: #161722;
 }
 #team-section_about .team-container_about .team-bottom .bottom-card:hover {

@@ -1,6 +1,37 @@
 @use "../global";
 @use "../abstrcts/mixin";
 
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+* {
+  @font-face {
+    font-family: "bot";
+    src: url(../../fonts/RobotoCondensed.ttf);
+  }
+}
+
 #intro-section_about {
   margin-top: 80px;
   padding: 160px 0px;
@@ -30,7 +61,7 @@
 
 #welcome-section_about {
   padding-top: 130px;
-  background: #ffffff;
+  background-color: #ffffff;
 
   .welcome-container_about {
     display: flex;
@@ -97,7 +128,7 @@
       justify-content: center;
       color: #161722;
       column-gap: 24px;
-      max-width: 980px;
+      max-width: 1000px;
       row-gap: 24px;
 
       .wel {
@@ -128,7 +159,7 @@
 
 #dublecards-section_about {
   padding: 130px 0px 0px;
-  background: #ffffff;
+  background-color: #ffffff;
 
   .dublecards-container_about {
     display: flex;
@@ -191,7 +222,7 @@
 
 #team-section_about {
   padding: 130px 0px;
-  background: #ffffff;
+  background-color: #ffffff;
 
   .team-container_about {
     display: flex;
@@ -225,7 +256,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: #ffffff;
+        background-color: #ffffff;
         color: #161722;
 
         &:hover {
