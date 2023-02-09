@@ -21,3 +21,34 @@
   }
 }
 
+// ---------
+
+@mixin gird($columns, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-column-gap: $gap;
+}
+
+@mixin btn {
+  padding: 24px 64px;
+  background: #ffd2a4;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1C1D28;
+  transition: 1s;
+  
+    &:hover {
+      color: #ffd2a4;
+      background-color: #1c1d28;
+     
+    }
+  
+}
+
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+}
