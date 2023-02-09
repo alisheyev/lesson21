@@ -1,5 +1,6 @@
 @use "../global";
 @use "../abstrcts/variables" as var;
+@use "../abstrcts/mixin" as mixin;
 
 #home {
   margin-top: 80px;
@@ -363,8 +364,8 @@
           color: #ffffff;
         }
       }
-      
-      .blog-card3{
+
+      .blog-card3 {
         padding: 32px;
         max-width: 302px;
         margin-top: 24px;
@@ -386,7 +387,7 @@
           color: #ffffff;
         }
       }
-      .blog-card4{
+      .blog-card4 {
         padding: 32px;
         max-width: 302px;
         margin-top: 24px;
@@ -425,7 +426,7 @@
     }
   }
 
-   .blog-card{
+  .blog-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 24px;
@@ -444,9 +445,8 @@
   }
 }
 
-
-@media (min-width: 1150px){
-  .blog-card{
+@media (min-width: 1150px) {
+  .blog-card {
     grid-template-columns: repeat(4, 1fr);
   }
 }
