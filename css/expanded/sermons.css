@@ -37,6 +37,10 @@ input:focus {
   color: unset;
 }
 
+:-ms-input-placeholder {
+  color: unset;
+}
+
 ::placeholder {
   color: unset;
 }
