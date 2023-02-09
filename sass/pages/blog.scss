@@ -1,0 +1,88 @@
+@use "../_global.scss";
+@use "../abstrcts/mixin";
+
+main {
+  background: #e5e5e5;
+}
+
+.hero__title-info {
+  padding-top: 208px;
+
+  .hero__title {
+    text-align: center;
+
+    h3 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: #161722;
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #161722;
+      margin-top: 16px;
+    }
+  }
+}
+
+.hero__card {
+  margin-top: 64px;
+  display: flex;
+  padding: 56px 85px 56px 56px;
+  background-color: #ffff;
+
+  .hero-img-left {
+    max-width: 572px;
+    max-height: 384px;
+  }
+
+  .hero-right {
+    margin-left: 48px;
+
+    .hero-right-title {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #161722;
+        opacity: 0.8;
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 29px;
+      line-height: 44px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #161722;
+      margin-top: 12px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #161722;
+      opacity: 0.78;
+      margin-top: 16px;
+    }
+
+    a {
+      button {
+        margin-top: 32px;
+      }
+    }
+  }
+}
