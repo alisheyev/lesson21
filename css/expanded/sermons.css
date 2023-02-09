@@ -58,10 +58,6 @@ input:focus {
   color: unset;
 }
 
-:-ms-input-placeholder {
-  color: unset;
-}
-
 ::placeholder {
   color: unset;
 }
@@ -290,6 +286,12 @@ input:focus {
   .footer-container .footer-right {
     grid-column: 1/3;
     grid-row: 2/3;
+  }
+}
+@media (max-width: 390px) {
+  form {
+    display: flex;
+    flex-direction: column;
   }
 }
 #header__section {
