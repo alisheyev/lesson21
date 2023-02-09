@@ -1,2 +1,59 @@
 @use "../global";
 @use "../abstrcts/mixin";
+
+#intro-section_about {
+  margin-top: 80px;
+  padding: 160px 0px;
+  background-image: url(../../images/about/intro-banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    h6 {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #161722;
+    }
+
+    h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #161722;
+    }
+  }
+}
+
+// -----------intro end--------------
+
+#team-section_about {
+  padding: 130px 0px;
+
+  .team-container_about {
+    display: flex;
+    flex-direction: column;
+
+    .team-top {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      text-transform: uppercase;
+      color: #161722;
+      text-align: center;
+
+      h6 {
+        font-weight: 400;
+      }
+
+      h2 {
+        font-weight: 700;
+      }
+    }
+
+    .team-bottom {
+        
+    }
+  }
+}

@@ -295,3 +295,48 @@ input:focus {
   background-color: #1c1d28;
   transition: 1s;
 }
+
+#intro-section_about {
+  margin-top: 80px;
+  padding: 160px 0px;
+  background-image: url(../../images/about/intro-banner.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#intro-section_about .about-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+#intro-section_about .about-box h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #161722;
+}
+#intro-section_about .about-box h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #161722;
+}
+
+#team-section_about {
+  padding: 130px 0px;
+}
+#team-section_about .team-container_about {
+  display: flex;
+  flex-direction: column;
+}
+#team-section_about .team-container_about .team-top {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  text-transform: uppercase;
+  color: #161722;
+  text-align: center;
+}
+#team-section_about .team-container_about .team-top h6 {
+  font-weight: 400;
+}
+#team-section_about .team-container_about .team-top h2 {
+  font-weight: 700;
+}
