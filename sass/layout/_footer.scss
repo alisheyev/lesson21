@@ -109,7 +109,12 @@ row-gap: 40px;
       grid-row: 2/3;
     }
   }
+}
 
+@media (max-width: 390px) {
 
-
+  form {
+    display: flex;
+    flex-direction: column;
+}
 }
