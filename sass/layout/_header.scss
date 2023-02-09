@@ -37,10 +37,6 @@
   }
 }
 
-#footer {
-  height: 3000px;
-}
-
 /*-- navigation bar mobile---*/
 #navbar-responsive {
   position: fixed;
@@ -62,12 +58,12 @@
     #navbar-close {
       margin: 35px 22px 0px 0px;
       &:hover {
-        color: red;
         transform: rotate(360deg);
         transition: 1s;
       }
     }
   }
+
   
 
   .nav-position {

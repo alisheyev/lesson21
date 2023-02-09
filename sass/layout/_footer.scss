@@ -1,6 +1,17 @@
+
+
 #footer {
   padding: 65px;
   background-color: #161722;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  ul {
+
+  }
 
   li {
     font-weight: 400;
@@ -18,6 +29,8 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
 
     form {
       display: flex;
