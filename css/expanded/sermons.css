@@ -378,8 +378,6 @@ input:focus {
   background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 .left__title h1 {
   margin: 16px 0;
