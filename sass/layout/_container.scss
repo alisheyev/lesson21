@@ -1,6 +1,10 @@
 .container {
   /* 1500-(110*2)=1500-220+(40)=1240 */
-  width: min(100% - 20px, 1240px);
-  margin-inline: auto;
-  box-sizing: border-box;
+}
+
+.container {
+  // 1500-110*2+20*2=1320
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
