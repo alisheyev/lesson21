@@ -38,10 +38,6 @@ input:focus {
   color: unset;
 }
 
-:-ms-input-placeholder {
-  color: unset;
-}
-
 ::placeholder {
   color: unset;
 }
@@ -422,7 +418,7 @@ input:focus {
   border-radius: 12px;
 }
 .btn-left button:hover {
-  color: #fff;
+  color: #ffffff;
   transition: 0.5s;
 }
 

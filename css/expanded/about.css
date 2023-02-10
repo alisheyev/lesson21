@@ -38,10 +38,6 @@ input:focus {
   color: unset;
 }
 
-:-ms-input-placeholder {
-  color: unset;
-}
-
 ::placeholder {
   color: unset;
 }
@@ -304,13 +300,6 @@ h5 {
 
 h6 {
   font-size: 16px;
-}
-
-@font-face {
-  * {
-    font-family: "bot";
-    src: url(../../fonts/RobotoCondensed.ttf);
-  }
 }
 
 #intro-section_about {
