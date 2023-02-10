@@ -371,3 +371,108 @@ main {
 .text-title .text-info-post .circle-post div p {
   margin-left: 19px;
 }
+
+@media only screen and (min-width: 0) {
+  .hero__wrapper .hero__title-info .hero__title h3 {
+    font-size: 8px;
+  }
+  .hero__wrapper .hero__title-info .hero__title h2 {
+    font-size: 24px;
+  }
+  .hero__wrapper .hero__title-info .hero__title p {
+    font-size: 10px;
+  }
+  .text-post .text-title {
+    padding: 64px 20px 128px 20px;
+  }
+  .text-post .text-title .text-info-post h3 {
+    font-size: 24px;
+  }
+  .text-post .text-title .text-info-post p {
+    font-size: 10px;
+  }
+  .text-post .text-title .text-info-post h4 {
+    font-size: 20px;
+  }
+  .text-post .text-title .text-info-post .left-line-post p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 350px) {
+  .hero__wrapper .hero__title-info .hero__title h3 {
+    font-size: 10px;
+  }
+  .hero__wrapper .hero__title-info .hero__title h2 {
+    font-size: 32px;
+  }
+  .hero__wrapper .hero__title-info .hero__title p {
+    font-size: 12px;
+  }
+  .text-post .text-title {
+    padding: 80px 100px 128px 80px;
+  }
+  .text-post .text-title .text-info-post h3 {
+    font-size: 30px;
+  }
+  .text-post .text-title .text-info-post p {
+    font-size: 14px;
+  }
+  .text-post .text-title .text-info-post h4 {
+    font-size: 26px;
+  }
+  .text-post .text-title .text-info-post .left-line-post p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 930px) {
+  .hero__wrapper .hero__title-info .hero__title h3 {
+    font-size: 12px;
+  }
+  .hero__wrapper .hero__title-info .hero__title h2 {
+    font-size: 38px;
+  }
+  .hero__wrapper .hero__title-info .hero__title p {
+    font-size: 14px;
+  }
+  .text-post .text-title {
+    padding: 64px 240px 128px 240px;
+  }
+  .text-post .text-title .text-info-post h3 {
+    font-size: 36px;
+  }
+  .text-post .text-title .text-info-post p {
+    font-size: 16px;
+  }
+  .text-post .text-title .text-info-post h4 {
+    font-size: 30px;
+  }
+  .text-post .text-title .text-info-post .left-line-post p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1070px) {
+  .hero__wrapper .hero__title-info .hero__title h3 {
+    font-size: 12px;
+  }
+  .hero__wrapper .hero__title-info .hero__title h2 {
+    font-size: 48px;
+  }
+  .hero__wrapper .hero__title-info .hero__title p {
+    font-size: 14px;
+  }
+  .text-post .text-title {
+    padding: 64px 346px 128px 346px;
+  }
+  .text-post .text-title .text-info-post h3 {
+    font-size: 48px;
+  }
+  .text-post .text-title .text-info-post p {
+    font-size: 24px;
+  }
+  .text-post .text-title .text-info-post h4 {
+    font-size: 32px;
+  }
+  .text-post .text-title .text-info-post .left-line-post p {
+    font-size: 24px;
+  }
+}
