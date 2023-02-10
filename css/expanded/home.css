@@ -291,7 +291,7 @@ input:focus {
   line-height: 19px;
   text-transform: uppercase;
   max-width: 186px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 #home .home__bady h1 {
   font-weight: 700;
@@ -300,7 +300,7 @@ input:focus {
   max-width: 592px;
   margin-bottom: 32px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 #home .home__bady button {
   padding: 24px 64px;
@@ -369,6 +369,12 @@ input:focus {
   border-top: transparent;
   border-left: transparent;
   border-right: transparent;
+  transition: 0.5s;
+}
+#about .about__bady .about-card:hover {
+  transform: scale(0.9);
+  border-bottom: 14px solid #dc9853;
+  transition: 0.8s;
 }
 #about .about__bady .about-card h1 {
   font-style: normal;
@@ -440,6 +446,10 @@ input:focus {
 .semon-row .suma__card .card-suma img {
   max-width: 293px;
   width: 100%;
+  transition: 0.5s;
+}
+.semon-row .suma__card .card-suma img:hover {
+  transform: scale(0.9);
 }
 .semon-row .suma__card .head {
   text-align: center;
@@ -448,6 +458,10 @@ input:focus {
 }
 .semon-row .suma__card .head img {
   width: 100%;
+  transition: 0.5s;
+}
+.semon-row .suma__card .head img:hover {
+  transform: scale(0.9);
 }
 .semon-row .suma__card .head button {
   margin-top: -30px;
@@ -505,6 +519,12 @@ input:focus {
   color: #161722;
   opacity: 0.78;
 }
+.semon-row .suma-bottom h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #161722;
+}
 
 #blog {
   background: #f5f2f0;
@@ -547,6 +567,7 @@ input:focus {
 }
 #blog .blog-row .blog-card .card-blog {
   padding: 32px;
+  cursor: pointer;
   margin-top: 24px;
   max-width: 302px;
   background: linear-gradient(184.38deg, #060606 16.68%, rgba(0, 0, 0, 0.02) 96.44%);
@@ -554,6 +575,18 @@ input:focus {
   background-position: center;
   background-size: cover;
   background-image: url(../../images/home/blog1/fashion-man-love-people-5875438.png);
+  transition: 1s;
+}
+#blog .blog-row .blog-card .card-blog:hover {
+  transform: scale(0.9);
+}
+#blog .blog-row .blog-card .card-blog:hover p {
+  transition: 0.6s;
+  opacity: 0.78;
+}
+#blog .blog-row .blog-card .card-blog:hover h1 {
+  transition: 0.6s;
+  opacity: 1;
 }
 #blog .blog-row .blog-card .card-blog h1 {
   margin-top: 176px;
@@ -562,6 +595,7 @@ input:focus {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  opacity: 0;
   max-width: 238px;
   color: #ffffff;
 }
@@ -574,18 +608,28 @@ input:focus {
   margin-top: 16px;
   color: #ffffff;
   max-width: 238px;
-  opacity: 0.78;
+  opacity: 0;
 }
 #blog .blog-row .blog-card .blog-card2 {
   padding: 32px;
   max-width: 302px;
   margin-top: 24px;
+  cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url(../../images/home/blog3/a-statue-holding-a-holy-book-5613134.png);
+  transition: 1s;
+}
+#blog .blog-row .blog-card .blog-card2:hover {
+  transform: scale(0.9);
+}
+#blog .blog-row .blog-card .blog-card2:hover h1 {
+  transition: 0.6s;
+  opacity: 1;
 }
 #blog .blog-row .blog-card .blog-card2 h1 {
+  opacity: 0;
   margin-top: 295px;
   font-style: normal;
   font-weight: 700;
@@ -604,8 +648,18 @@ input:focus {
   background-size: cover;
   background-position: center;
   background-image: url(../../images/home/blog2/man-people-woman-connection-6276711.png);
+  cursor: pointer;
+  transition: 1s;
+}
+#blog .blog-row .blog-card .blog-card3:hover {
+  transform: scale(0.9);
+}
+#blog .blog-row .blog-card .blog-card3:hover h1 {
+  transition: 0.6s;
+  opacity: 1;
 }
 #blog .blog-row .blog-card .blog-card3 h1 {
+  opacity: 0;
   margin-top: 295px;
   font-style: normal;
   font-weight: 700;
@@ -624,8 +678,18 @@ input:focus {
   background-size: cover;
   background-position: center;
   background-image: url(../../images/home/blog2/woman-in-blue-tank-top-and-man-in-red-shirt-painting-3795022.png);
+  cursor: pointer;
+  transition: 1s;
+}
+#blog .blog-row .blog-card .blog-card4:hover {
+  transform: scale(0.9);
+}
+#blog .blog-row .blog-card .blog-card4:hover h1 {
+  transition: 0.6s;
+  opacity: 1;
 }
 #blog .blog-row .blog-card .blog-card4 h1 {
+  opacity: 0;
   margin-top: 295px;
   font-style: normal;
   font-weight: 700;
@@ -692,7 +756,6 @@ input:focus {
   text-transform: uppercase;
   background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
 }
 .left__title h1 {
   margin: 16px 0;
@@ -760,10 +823,183 @@ input:focus {
   height: 100%;
 }
 
+#around {
+  margin-top: 128px;
+  padding: 128px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../images/home/around.png);
+}
+#around .around-row {
+  border: 16px solid #ffd2a4;
+  margin-bottom: 28px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  margin: 0 auto;
+  gap: 117px;
+  padding: 72px 48px;
+  align-items: center;
+  max-width: 766px;
+  background: #ffffff;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+#around .around-row .around-left h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  max-width: 368px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  /* Black */
+  color: #161722;
+}
+#around .around-row .around-left p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 302px;
+  margin: 16px 0;
+  color: #161722;
+  opacity: 0.78;
+}
+#around .around-row .around-left button {
+  padding: 24px 64px;
+  background: #ffd2a4;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1c1d28;
+  transition: 1s;
+}
+#around .around-row .around-left button:hover {
+  color: #ffd2a4;
+  background-color: #1c1d28;
+}
+#around .around-row .around-right img {
+  margin-top: 10px;
+  max-width: 187px;
+  width: 100%;
+}
+
+.card__intro {
+  margin: 128px 0 64px 0;
+  text-align: center;
+}
+.card__intro h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 128px;
+}
+.cards .card__title {
+  padding: 80px 50px;
+  background: #fff5eb;
+}
+.cards .card__title h4 {
+  margin-bottom: 8px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #dc9853;
+}
+.cards .card__title h1 {
+  margin: 8px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+}
+.cards .card__title p {
+  max-width: 100%;
+  margin: 8px 0 16px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #161722;
+  opacity: 0.78;
+}
+
+.cards:hover > :not(:hover) {
+  opacity: 0.4;
+  transform: scale(0.9);
+  border-bottom: 14px solid #dc9853;
+  transition: 0.8s;
+}
+
+.card__title-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.card__title-row img {
+  width: 30px;
+}
+.card__title-row h2 {
+  margin: 16px 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 950px) {
+  #main__section-img {
+    margin: 80px 0 0 0;
+  }
+}
 @media (max-width: 900px) {
   .left__right {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card__title-row {
+    display: flex;
+    grid-gap: 35px;
   }
 }
 @media (max-width: 420px) {
@@ -785,6 +1021,9 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 24px;
+  }
+  .around-row {
+    display: flex;
   }
 }
 @media (min-width: 900px) {

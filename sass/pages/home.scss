@@ -96,6 +96,13 @@
       border-top: transparent;
       border-left: transparent;
       border-right: transparent;
+      transition: 0.5s;
+      &:hover {
+        transform: scale(0.9);
+        border-bottom: 14px solid var.$background-color;
+        transition: 0.8s;
+      }
+
       h1 {
         font-style: normal;
         margin-top: 24px;
@@ -183,6 +190,10 @@
       img {
         max-width: 293px;
         width: 100%;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(0.9);
+        }
       }
     }
 
@@ -192,6 +203,10 @@
       max-width: 390px;
       img {
         width: 100%;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(0.9);
+        }
       }
       button {
         margin-top: -30px;
@@ -240,6 +255,15 @@
       max-width: 512px;
       color: #161722;
       opacity: 0.78;
+    }
+
+    h6 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      
+
+      color: #161722;
     }
   }
 }
@@ -293,6 +317,7 @@
       padding-bottom: 128px;
       .card-blog {
         padding: 32px;
+        cursor: pointer;
         margin-top: 24px;
         max-width: 302px;
         background: linear-gradient(
@@ -305,6 +330,21 @@
         background-position: center;
         background-size: cover;
         background-image: url(../../images/home/blog1/fashion-man-love-people-5875438.png);
+        transition: 1s;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+        &:hover p {
+          transition: 0.6s;
+          opacity: 0.78;
+        }
+
+        &:hover h1 {
+          transition: 0.6s;
+          opacity: 1;
+        }
+
         h1 {
           margin-top: 176px;
           font-style: normal;
@@ -312,7 +352,7 @@
           font-size: 24px;
           line-height: 28px;
           text-transform: uppercase;
-
+          opacity: 0;
           max-width: 238px;
           color: #ffffff;
         }
@@ -326,7 +366,7 @@
           margin-top: 16px;
           color: #ffffff;
           max-width: 238px;
-          opacity: 0.78;
+          opacity: 0;
         }
       }
 
@@ -334,11 +374,22 @@
         padding: 32px;
         max-width: 302px;
         margin-top: 24px;
+        cursor: pointer;
         background-repeat: no-repeat;
         background-size: cover;
+
         background-position: center;
         background-image: url(../../images/home/blog3/a-statue-holding-a-holy-book-5613134.png);
+        transition: 1s;
+        &:hover {
+          transform: scale(0.9);
+        }
+        &:hover h1 {
+          transition: 0.6s;
+          opacity: 1;
+        }
         h1 {
+          opacity: 0;
           margin-top: 295px;
           font-style: normal;
           font-weight: 700;
@@ -361,7 +412,18 @@
         background-size: cover;
         background-position: center;
         background-image: url(../../images/home/blog2/man-people-woman-connection-6276711.png);
+        cursor: pointer;
+        transition: 1s;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+        &:hover h1 {
+          transition: 0.6s;
+          opacity: 1;
+        }
         h1 {
+          opacity: 0;
           margin-top: 295px;
           font-style: normal;
           font-weight: 700;
@@ -383,7 +445,18 @@
         background-size: cover;
         background-position: center;
         background-image: url(../../images/home/blog2/woman-in-blue-tank-top-and-man-in-red-shirt-painting-3795022.png);
+        cursor: pointer;
+        transition: 1s;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+        &:hover h1 {
+          transition: 0.6s;
+          opacity: 1;
+        }
         h1 {
+          opacity: 0;
           margin-top: 295px;
           font-style: normal;
           font-weight: 700;
@@ -401,11 +474,7 @@
   }
 }
 
-
 // -----------------------
-
-
-
 
 .main__section-title {
   padding-top: 150px;
@@ -462,7 +531,6 @@
     text-transform: uppercase;
     background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
     -webkit-text-fill-color: transparent;
-   
   }
   h1 {
     margin: 16px 0;
@@ -533,6 +601,71 @@
 }
 
 // ----
+
+#around {
+  margin-top: 128px;
+  padding: 128px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../images/home/around.png);
+  .around-row {
+    border: 16px solid #ffd2a4;
+    margin-bottom: 28px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin: 0 auto;
+    gap: 117px;
+    padding: 72px 48px;
+    align-items: center;
+    max-width: 766px;
+    background: #ffffff;
+    backdrop-filter: blur(20px);
+    .around-left {
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        max-width: 368px;
+
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+
+        /* Black */
+
+        color: #161722;
+      }
+
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 302px;
+        margin: 16px 0;
+        color: #161722;
+
+        opacity: 0.78;
+      }
+
+      button {
+        @include mixin.btn;
+      }
+    }
+
+    .around-right {
+      img {
+        margin-top: 10px;
+        max-width: 187px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// ---
 
 .card__intro {
   margin: 128px 0 64px 0;
@@ -619,10 +752,7 @@
   }
 }
 
-
-
 // ------
-
 
 @media (max-width: 1000px) {
   .cards {
@@ -666,9 +796,7 @@
   }
 }
 
-
-// 
-
+//
 
 @media (min-width: 700px) {
   .about__bady {
@@ -689,6 +817,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 24px;
+  }
+
+  .around-row {
+    display: flex;
   }
 }
 
