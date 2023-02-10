@@ -294,14 +294,12 @@ main {
 }
 .hero__title-info .hero__title h3 {
   font-weight: 400;
-  font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
   color: #161722;
 }
 .hero__title-info .hero__title h4 {
   font-weight: 700;
-  font-size: 48px;
   line-height: 64px;
   text-align: center;
   letter-spacing: -0.01em;
@@ -311,17 +309,18 @@ main {
 }
 
 .hero__card {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   margin-top: 64px;
-  display: flex;
   padding: 56px 85px 56px 56px;
   background-color: white;
 }
-.hero__card .hero-img-left {
+.hero__card div {
   max-width: 572px;
-  max-height: 384px;
 }
 .hero__card .hero-right {
-  margin-left: 48px;
+  margin-top: 28px;
+  max-width: 519px;
 }
 .hero__card .hero-right .hero-right-title {
   display: flex;
@@ -329,7 +328,6 @@ main {
 }
 .hero__card .hero-right .hero-right-title h2 {
   font-weight: 400;
-  font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
   color: #161722;
@@ -337,7 +335,6 @@ main {
 }
 .hero__card .hero-right h3 {
   font-weight: 700;
-  font-size: 29px;
   line-height: 44px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
@@ -346,7 +343,6 @@ main {
 }
 .hero__card .hero-right p {
   font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   color: #161722;
   opacity: 0.78;
@@ -357,6 +353,7 @@ main {
 }
 
 .spider-card {
+  padding-bottom: 128px;
   padding-top: 128px;
 }
 .spider-card .spider-title {
@@ -364,7 +361,7 @@ main {
 }
 .spider-card .spider-title h2 {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 24px;
   line-height: 64px;
   text-align: center;
   letter-spacing: -0.01em;
@@ -373,11 +370,17 @@ main {
 }
 .spider-card .cards {
   display: grid;
-  grid-template-columns: repeat(4, auto);
   gap: 24px;
   margin-top: 65px;
 }
+.spider-card .cards .card-bgc {
+  background-image: url(../../images/blog-post/Bottom-line.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 .spider-card .cards .card {
+  max-width: 302px;
+  max-height: 367px;
   padding: 48px 32px;
   background-color: #fff;
 }
@@ -406,9 +409,109 @@ main {
   opacity: 0.78;
   margin-top: 16px;
 }
-.spider-card .cards .card h5 {
+.spider-card .cards .card .author-card {
+  margin-top: 24px;
+}
+.spider-card .cards .card .author-card h5 {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #161722;
+}
+
+@media only screen and (min-width: 350px) {
+  .hero__title h3 {
+    font-size: 10px;
+  }
+  .hero__title h4 {
+    font-size: 28px;
+  }
+  .hero__card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero__card div img {
+    max-width: 100%;
+  }
+  .hero__card .hero-right {
+    margin-left: 48px;
+  }
+  .hero__card .hero-right .hero-right-title h2 {
+    font-size: 10px;
+  }
+  .hero__card .hero-right h3 {
+    font-size: 18px;
+  }
+  .hero__card .hero-right p {
+    font-size: 8px;
+  }
+  .spider-card .spider-title h2 {
+    font-size: 24px;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 702px) {
+  .hero__title h3 {
+    font-size: 12px;
+  }
+  .hero__title h4 {
+    font-size: 32px;
+  }
+  .hero__card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero__card div img {
+    max-width: 100%;
+  }
+  .hero__card .hero-right {
+    margin-left: 48px;
+  }
+  .hero__card .hero-right .hero-right-title h2 {
+    font-size: 12px;
+  }
+  .hero__card .hero-right h3 {
+    font-size: 24px;
+  }
+  .hero__card .hero-right p {
+    font-size: 12px;
+  }
+  .spider-card .spider-title h2 {
+    font-size: 36px;
+  }
+  .cards {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media only screen and (min-width: 932px) {
+  .hero__title h3 {
+    font-size: 16px;
+  }
+  .hero__title h4 {
+    font-size: 48px;
+  }
+  .hero__card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero__card div img {
+    max-width: 100%;
+  }
+  .hero__card .hero-right {
+    margin-left: 48px;
+  }
+  .hero__card .hero-right .hero-right-title h2 {
+    font-size: 16px;
+  }
+  .hero__card .hero-right h3 {
+    font-size: 32px;
+  }
+  .hero__card .hero-right p {
+    font-size: 16px;
+  }
+  .spider-card .spider-title h2 {
+    font-size: 48px;
+  }
+  .cards {
+    grid-template-columns: repeat(4, auto);
+  }
 }
